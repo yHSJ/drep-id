@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "JSHy",
+    "motivations": "I am becoming a DRep because I feel it is important to represent myself in a decentralized government. However, I have lots of technical experience with Cardano that I feel lends to me being a fair and educated representatives for others.",
+    "objectives": "I believe in a Cardano that doesn't deviate from it's core values of providing an equitable, decentralized, global financial operating system.",
+    "paymentAddress": "addr1q9q0htjtaygzwtj3h4akj2mvzaxgpru4yje4ca9a507jtdw5pcy8kzccynfps4ayhmtc38j6tyjrkyfccdytnxwnd6ps20zzll",
+    "qualifications": "My experience includes, but is not limited to:\n- Software Engineer at JPG Store\n- Engineer on the Hydra DOOM project\n- Contributor to open source tooling and libraries in Cardano\n- Founder of SecurityBot\n- Active contributor in the CIP process\n- I have identified and suggested a fix (that has been implemented) for a potential issue in the ledger\n- and more",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "SecurityBot",
+        "uri": "https://securitybot.info"
+      },
+      {
+        "@type": "Identity",
+        "label": "Twitter/X",
+        "uri": "https://x.com/JSHyCS"
+      }
+    ]
+  }
+}
